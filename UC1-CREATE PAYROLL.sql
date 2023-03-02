@@ -20,3 +20,6 @@ select *from Employee where Name = 'Raji';
 select *from Employee where Salary = 6000000;
 ---------UC5-SELECT WITH WHERE QUERY--------------------
 select * from Employee WHERE StartDate BETWEEN CAST ('2018-0-01' as date ) and getDATE(); 
+---------UC6-UPDATE THE EMPLOYEE TABLE------------------
+ALTER TABLE Employee ADD Gender char;
+UPDATE Employee set Gender = 'F' WHERE Name = 'swetha';
